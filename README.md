@@ -52,9 +52,9 @@ The model is trained on 156 series (5,500 slices of MRIs) and validated on a sep
 
 We use 2 metrics to evaluate the performance of the model: **Dice coefficient** and **Jaccard index**.
 
-- **Dice coefficient** (Dice score) is calculated by `2*INTERSECTION(volume_pred, volume_true) / (volume_pred + volume_true)`
+- **Dice coefficient** (Dice score) = `2*INTERSECTION(volume_pred, volume_true) / (volume_pred + volume_true)`
 
-- **Jaccard index** (Jaccard score) is calculated by `INTERSECTION(volume_pred, volume_true) / UNION(volume_pred, volume_true)`
+- **Jaccard index** (Jaccard score) = `INTERSECTION(volume_pred, volume_true) / UNION(volume_pred, volume_true)`
 
 The two scores range can from 0 (poor performance) to 1 (best performance). By running the algorithm on the validation dataset, we get the mean `Dice score = 0.8955` and mean `Jaccard scores = 0.8116` across all volumes:
 
@@ -73,6 +73,10 @@ The two scores range can from 0 (poor performance) to 1 (best performance). By r
 
 HippoVolume.AI can access the volumes in PACS (Orthanc) from the MRI scanner and estimates the hippocampal size automatically. A report with segmentation results will be saved to the PACS and is accessible by the clinicians with the viewer system such as OHIF for medical diagnoses.
 
+[![OHIF-report-screenshot.png](https://i.postimg.cc/XqVzxqwC/OHIF-report-screenshot.png)](https://postimg.cc/DJM6w2pv)
+<p align="center">
+    Hippocampal segmentation tool is integrated into a simulated clinical network
+</p>
 
 ## References
 
