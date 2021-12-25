@@ -56,6 +56,11 @@ We use 2 metrics to evaluate the performance of the model: **Dice coefficient** 
 
 - **Jaccard index** (Jaccard score) = `INTERSECTION(volume_pred, volume_true) / UNION(volume_pred, volume_true)`
 
+[![evaluation-metrics.png](https://i.postimg.cc/PfZ66t7j/evaluation-metrics.png)](https://postimg.cc/kDJFGd91)
+<p align="center">
+    Evaluation metrics: Dice coefficient and Jaccard index
+</p>
+
 The two scores range can from 0 (poor performance) to 1 (best performance). By running the algorithm on the validation dataset, we get the mean `Dice score = 0.8955` and mean `Jaccard scores = 0.8116` across all volumes:
 
 [![scores-boxplots.png](https://i.postimg.cc/kG13fPDJ/scores-boxplots.png)](https://postimg.cc/jn7FS9zm)
