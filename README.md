@@ -1,6 +1,6 @@
 # Hippocampal Volume Quantification in Alzheimer's Progression
 
-*Lasted updated: 12/23/2021*
+*Last updated: 12/23/2021*
 
 [![hippocampus-frontpage-photo-crop.png](https://i.postimg.cc/5yLDXD2V/hippocampus-frontpage-photo-crop.png)](https://postimg.cc/y36L5QRQ)
 <p align="center">
